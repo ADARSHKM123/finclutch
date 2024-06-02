@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    overflow-x: hidden;
+    color: #fff;
+    height: 100vh;
+}
+.Container{
+    margin: 40px 60px;
+}
+.inner-Content{
+    padding: 30px;
+}
+.topHead .inner-Content p{
+    padding-top: 5px;
+    font-size: 15px;
+}
+.DatePick {
+    padding: 60px 20px;
+}
+.DatePick p{
+    font-size: 25px;
+    font-weight: 500;
+    background: -webkit-linear-gradient(#704FF2, #D06EF2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
