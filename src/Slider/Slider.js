@@ -64,6 +64,7 @@ const CustomSlider = () => {
 const Slider = () => {
   return (
     <div className="Slider">
+      <p className='text-[25px]'>Choose the time if you want to</p>
       <CustomSlider />
     </div>
   );

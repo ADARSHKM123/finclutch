@@ -11,10 +11,12 @@ function LandingOI() {
         </div>
       </div> 
       <div className="px-[20px] py-[20px]">
-        <p className="text-[25px] font-medium bg-clip-text text-transparent bg-gradient-to-r from-customGradientFrom to-customGradientTo">
+        <p className="text-[25px] py-[30px]">
           Choose Date
         </p>
+        <div className=''>
         <DatePick />
+        </div>
       </div>
     </div> 
   );
