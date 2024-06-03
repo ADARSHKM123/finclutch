@@ -17,3 +17,46 @@
     font-weight: 600;
     border-radius: 10px;
 }
+.OiDetails{
+    
+    /* display: grid;
+    grid-template-columns: 200px 200px;
+    align-items: center;
+    justify-content: center; */
+    width: 100%;
+    height: 400px;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+/* .Nifty{
+    background-color: aqua;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+
+    text-align: center;
+}
+.Bnf{
+    background-color: blue;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    text-align: center;
+} */
+.Nifty{
+    width: 400px;
+    height: 300px;
+    background-color: aqua;
+}
+.Bnf{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(10, 13, 196);
+}

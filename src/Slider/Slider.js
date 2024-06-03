@@ -16,26 +16,19 @@ const formatTime = ({ hours, mins }) => {
   return `${formattedHours}:${paddedMinutes} ${period}`;
 };
 
-const getCurrentMinutesFromStartTime = (startHours, startMinutes) => {
-  const now = new Date();
-  const currentHours = now.getHours();
-  const currentMinutes = now.getMinutes();
-  return timeToMinutes(currentHours, currentMinutes) - timeToMinutes(startHours, startMinutes);
-};
-
 const CustomSlider = () => {
   const startTime = timeToMinutes(9, 15);
   const endTime = timeToMinutes(15, 30);
-  const totalMinutes = endTime - startTime;
 
-  const [sliderValue, setSliderValue] = useState(startTime);
+  const [sliderValue, setSliderValue] = useState(timeToMinutes(new Date().getHours(), new Date().getMinutes()));
 
   useEffect(() => {
-    const currentMinutes = getCurrentMinutesFromStartTime(9, 15);
-    if (currentMinutes >= 0 && currentMinutes <= totalMinutes) {
-      setSliderValue(startTime + currentMinutes);
-    }
-  }, [startTime, totalMinutes]);
+    const interval = setInterval(() => {
+      setSliderValue(timeToMinutes(new Date().getHours(), new Date().getMinutes()));
+    }, 60000); // Update every minute
+
+    return () => clearInterval(interval); // Cleanup function to clear interval on unmount
+  }, []);
 
   const handleSliderChange = (event) => {
     setSliderValue(Number(event.target.value));
@@ -61,13 +54,4 @@ const CustomSlider = () => {
   );
 };
 
-const Slider = () => {
-  return (
-    <div className="Slider">
-      <p className='text-[25px]'>Choose the time if you want to</p>
-      <CustomSlider />
-    </div>
-  );
-};
-
-export default Slider;
+export default CustomSlider;

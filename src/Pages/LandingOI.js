@@ -20,10 +20,15 @@ function LandingOI() {
         <DatePick />
         </div>
         <div className='Slider-part'>
+        <p className='text-[25px]'>Choose the time if you want to</p>
         <Slider/>
         </div>
         <div  className='goBtn'>
           <div className='goBtnContent'>Go</div>
+        </div>
+        <div className='OiDetails'>
+          <div className='Nifty'></div>
+          <div className='Bnf'></div>
         </div>
       </div>
     </div> 
