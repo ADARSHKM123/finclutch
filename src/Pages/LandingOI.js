@@ -1,5 +1,7 @@
 import React from 'react';
 import DatePick from '../Components/DatePick';
+import Slider from '../Slider/Slider';
+import './LandingOI.css'
 
 function LandingOI() {
   return (
@@ -16,6 +18,12 @@ function LandingOI() {
         </p>
         <div className=''>
         <DatePick />
+        </div>
+        <div className='Slider-part'>
+        <Slider/>
+        </div>
+        <div  className='goBtn'>
+          <div className='goBtnContent'>Go</div>
         </div>
       </div>
     </div> 

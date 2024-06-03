@@ -23,10 +23,6 @@ body{
     transition: opacity 0.2s;
   }
 
-  .Slider p{
-    padding-left: 85px;
-  }
-  
   .slider:hover {
     opacity: 1;
   }
