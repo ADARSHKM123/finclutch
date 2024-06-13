@@ -27,8 +27,36 @@ function LandingOI() {
           <div className='goBtnContent'>Go</div>
         </div>
         <div className='OiDetails'>
-          <div className='Nifty'></div>
-          <div className='Bnf'></div>
+          <div className='Nifty'>
+          <div className='IndexTitle'>NIFTY</div>    
+          <div className='Index_Details'>
+            
+              <div className='Index_Details_left'>
+                <p>TOT CE OI   : 234567</p>
+                <p>TOT PE OI   : 234567</p>
+                <p>TOT OI DIFF   : 234567</p>
+              </div>
+              <div className='Index_Details_right'>
+                <p>PCR  :  2</p>
+                <p>TREND  :<span> BULLISH</span></p>
+              </div>
+            </div>
+          </div>
+          <div className='Bnf'>
+          <div className='IndexTitle'>BANK NIFTY</div>    
+          <div className='Index_Details'>
+            
+              <div className='Index_Details_left'>
+                <p>TOT CE OI   : 234567</p>
+                <p>TOT PE OI   : 234567</p>
+                <p>TOT OI DIFF   : 234567</p>
+              </div>
+              <div className='Index_Details_right'>
+                <p>PCR  :  2</p>
+                <p>TREND  :<span> BULLISH</span></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div> 
