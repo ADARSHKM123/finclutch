@@ -2,6 +2,8 @@ import React from 'react';
 import DatePick from '../Components/DatePick';
 import Slider from '../Slider/Slider';
 import './LandingOI.css'
+import { FcBearish } from "react-icons/fc";
+import { FcBullish } from "react-icons/fc";
 
 function LandingOI() {
   return (
@@ -38,7 +40,7 @@ function LandingOI() {
               </div>
               <div className='Index_Details_right'>
                 <p>PCR  :  2</p>
-                <p>TREND  :<span> BULLISH</span></p>
+                <p className='TREND'>TREND :<span>BEARISH <FcBearish /></span></p>
               </div>
             </div>
           </div>
@@ -53,7 +55,40 @@ function LandingOI() {
               </div>
               <div className='Index_Details_right'>
                 <p>PCR  :  2</p>
-                <p>TREND  :<span> BULLISH</span></p>
+                <p className='TREND'>TREND :<span>BULLISH <FcBullish /></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='OiDetails_Sec'>
+          <div className='Nifty'>
+          <div className='IndexTitle'>NIFTY</div>    
+          <div className='Index_Details'>
+            
+              <div className='Index_Details_left'>
+                <p>TOT CE OI   : 234567</p>
+                <p>TOT PE OI   : 234567</p>
+                <p>TOT OI DIFF   : 234567</p>
+              </div>
+              <div className='Index_Details_right'>
+                <p>PCR  :  2</p>
+                <p className='TREND'>TREND :<span>BEARISH <FcBearish /></span></p>
+              </div>
+            </div>
+          </div>
+          <div className='Bnf'>
+          <div className='IndexTitle'>BANK NIFTY</div>    
+          <div className='Index_Details'>
+            
+              <div className='Index_Details_left'>
+                <p>TOT CE OI   : 234567</p>
+                <p>TOT PE OI   : 234567</p>
+                <p>TOT OI DIFF   : 234567</p>
+              </div>
+              <div className='Index_Details_right'>
+                <p>PCR  :  2</p>
+                <p className='TREND'>TREND :<span>BULLISH <FcBullish /></span></p>
               </div>
             </div>
           </div>
