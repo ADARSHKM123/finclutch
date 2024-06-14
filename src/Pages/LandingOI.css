@@ -17,11 +17,20 @@
     font-weight: 600;
     border-radius: 10px;
 }
-.OiDetails{
+.OiDetails-Wrapper{
     width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.OiDetails{
+    width: 75%;
     height: fit-content;
     /* background-color: brown; */
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-content: center;
     gap: 40px;
@@ -36,7 +45,7 @@
     justify-content: center;
     gap: 40px;
 }
-/* .Nifty{
+/* .Index{
     background-color: aqua;
     width: 300px;
     display: flex;
@@ -55,26 +64,21 @@
     height: 300px;
     text-align: center;
 } */
-.Nifty{
+.Index{
     width: 460px;
     height: 250px;
-    /* background-color: aqua; */
-    border: 1px solid #9029a8;
+    /* border: 1px solid #500dcb; */
     border-radius: 10px;
     
 }
-.Nifty p{
-    font-size: 18px;
+.Index:nth-child(1){
+    border: 1px solid #9029a8;
 }
-.Bnf p{
-    font-size: 18px;
-}
-.Bnf{
-    width: 460px;
-    height: 250px;
+.Index:nth-child(2){
     border: 1px solid #500dcb;
-    border-radius: 10px;
-    /* background-color: rgb(10, 13, 196); */
+}
+.Index p{
+    font-size: 18px;
 }
 .Index_Details{
     display: grid;
@@ -96,22 +100,24 @@
     padding: 20px;
     font-size: 18px;
 }
-.Bnf .Index_Details_right span{
+.Index .Index_Details_right span{
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: center;
-    /* color: rgb(18, 189, 132); */
-    /* color: rgb(228, 58, 36); */
 }
-.Nifty .Index_Details_right span{
+.Index .Index_Details_right span{
     display: flex;
     gap: 10px;
     align-items: center;
-    /* justify-content: center; */
-    /* color: rgb(18, 189, 132); */
-    /* color: rgb(189, 38, 18); */
 }
 .TREND{
     display: flex;
+}
+
+.MainDate{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
