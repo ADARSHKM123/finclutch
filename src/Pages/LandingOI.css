@@ -64,27 +64,20 @@
     height: 300px;
     text-align: center;
 } */
-.Index{
-    width: 460px;
-    height: 250px;
-    /* border: 1px solid #500dcb; */
-    border-radius: 10px;
-    
-}
-.Index:nth-child(1){
-    border: 1px solid #9029a8;
+/* .Index:nth-child(1){
+    border: 1px solid #9029a8; 
 }
 .Index:nth-child(2){
     border: 1px solid #500dcb;
-}
+} */
 .Index p{
     font-size: 18px;
 }
 .Index_Details{
     display: grid;
     grid-template-columns: 250px 200px;
-    align-items: center;
     justify-content: center;
+    padding-bottom: 30px;
 }
 .Index_Details_left p{
     padding: 12px;
@@ -121,3 +114,24 @@
     align-items: center;
     justify-content: center;
 }
+
+
+.Index{
+    width: 460px;
+    height: fit-content;
+    border: 1px solid #500dcb;
+    border-radius: 10px;
+    
+}
+  
+  .even-border {
+    border-color: #9029a8; /* Change this to your desired color */
+  }
+  
+  .End_Result{
+    padding-bottom: 20px;
+  }
+  .Index p{
+    font-size: 16px;
+    text-transform: uppercase;
+  }

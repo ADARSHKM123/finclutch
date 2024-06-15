@@ -20,7 +20,7 @@ function LandingOI({ OiData }) {
           <h2 className="text-2xl">OPEN INTEREST</h2>
           <p className="pt-[5px] text-base">You can access total open interest values for anytime with ease and confidence</p>
         </div>
-      </div> 
+      </div>
       <div className="px-[20px] py-[20px]">
         <p className="text-[25px] py-[30px]">Choose Date</p>
         <div className=''>
@@ -28,7 +28,7 @@ function LandingOI({ OiData }) {
         </div>
         <div className='Slider-part'>
           <p className='text-[25px]'>Choose the time if you want to</p>
-          <Slider/>
+          <Slider />
         </div>
         <div className='goBtn'>
           <div className='goBtnContent'>Go</div>
@@ -40,29 +40,37 @@ function LandingOI({ OiData }) {
               <p>Week : <span>{OiData[0].dayOfWeek}</span></p>
             </div>
             <div className='OiDetails-Wrapper'>
-              <div className='OiDetails' >
-              {OiData.map((data, index) => (
-                  <div className='Index' key={index}>
-                    <div className='IndexTitle'>{data.symbol}</div>    
+              <div className='OiDetails'>
+                {OiData.map((data, index) => (
+                  <div className={`Index ${index % 2 === 0 ? 'even-border' : ''}`} key={index}>
+                    <div className='IndexTitle'>{data.symbol}</div>
                     <div className='Index_Details'>
                       <div className='Index_Details_left'>
                         <p>TOT CE OI : {data.tot_CE_OI}</p>
-                        <p>TOT PE OI : {data.tot_PE_OI}</p>
-                        <p>TOT OI DIFF : {data.differInLakhs}</p>
+                        <p>TOT OI DIFF : {data.differ}</p>
+                        <p>DIFF IN LAKHS : {data.differInLakhs}</p>
+                        <p>PCR : {data.pcr}</p>
+                        {/* <p>END RESULT : {data.result}</p> */}
                       </div>
                       <div className='Index_Details_right'>
-                        <p>PCR : {data.pcr}</p>
+                      <p>TOT PE OI : {data.tot_PE_OI}</p>
+                        <p>DIFF DIRECTION : {data.diffDirection}</p>
+                        <p>ENTRY DIRECTION : {data.entryDirection}</p>
                         <p className='TREND'>
                           TREND : <span>
-                            {data.trend === 'bullish' && <><FcBullish /> Bullish</>}
-                            {data.trend === 'bearish' && <><FcBearish /> Bearish</>}
-                            {data.trend === 'neutral' && <><PiApproximateEqualsLight /> Neutral</>}
+                            {data.trend === 'bullish' && <><FcBullish /> BULLISH</>}
+                            {data.trend === 'bearish' && <><FcBearish /> BEARISH</>}
+                            {data.trend === 'neutral' && <><PiApproximateEqualsLight style={{ color: '#fcfcfc' }} /> NEUTRAL
+                            </>}
                           </span>
                         </p>
                       </div>
                     </div>
+                    <div className='End_Result'>
+                    <p>RESULT : {data.result}</p>
+                    </div>
                   </div>
-              ))}
+                ))}
               </div>
             </div>
           </>
@@ -72,7 +80,7 @@ function LandingOI({ OiData }) {
           </div>
         )}
       </div>
-    </div> 
+    </div>
   );
 }
 

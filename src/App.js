@@ -29,7 +29,7 @@ function App() {
     };
  
     OiDetails();
-    const intervalId = setInterval(OiDetails, 2 * 60 * 1000);
+    const intervalId = setInterval(OiDetails, 1 * 60 * 1000);
 
     return () => clearInterval(intervalId);
   }, [dispatch]);
